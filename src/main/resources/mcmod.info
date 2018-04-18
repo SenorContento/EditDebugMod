@@ -1,0 +1,16 @@
+[
+{
+  "modid": "EditDebug",
+  "name": "Edit Debug Screen",
+  "description": "Allows for modifying the Debug Screen to Enhance Gameplay!!!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "https://senorcontento.com/",
+  "authorList": ["Señor Contento"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

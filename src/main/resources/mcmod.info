@@ -1,15 +1,16 @@
 [
 {
-  "modid": "EditDebug",
+  "modid": "editdebug",
   "name": "Edit Debug Screen",
   "description": "Allows for modifying the Debug Screen to Enhance Gameplay!!!",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "https://senorcontento.com/",
+  "url": "https://editdebug.senorcontento.com/",
+  "updateUrl": "https://editdebug.senorcontento.com/update",
+  "updateJSON": "https://editdebug.senorcontento.com/update.json",
   "authorList": ["Señor Contento"],
-  "credits": "",
-  "logoFile": "",
+  "credits": "SevTech for Inspiring Me With Removed Coordinates!!!",
+  "logoFile": "assets/textures/logo.png",
   "screenshots": [],
   "dependencies": []
 }

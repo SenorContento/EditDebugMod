@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
 @Mod(modid = EditDebug.MODID, version = EditDebug.VERSION, name = EditDebug.NAME, useMetadata = true)
@@ -21,15 +23,18 @@ public class EditDebug {
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
+    	System.out.println("isClient: " + FMLCommonHandler.instance().getEffectiveSide().isClient());
         if(FMLCommonHandler.instance().getEffectiveSide().isClient())
             MinecraftForge.EVENT_BUS.register(this);
     }
     
+    @SideOnly(value=Side.CLIENT)
     @SubscribeEvent
     public void renderOverlayEvent(RenderGameOverlayEvent.Text event) {
         EntityPlayer player = Minecraft.getMinecraft().player;
         if(player.capabilities.isCreativeMode)
             return;
+
         
         Iterator<String> it = event.getLeft().listIterator();
         while (it.hasNext()) {

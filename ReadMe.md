@@ -12,3 +12,6 @@ To Run Under Server
 To Setup Workspace for Eclipse
 ./gradlew setupDevWorkspace
 ./gradlew eclipse
+
+When in doubt try,
+./gradlew clean && ./gradlew setupDevWorkspace && ./gradlew eclipse && ./gradlew build
